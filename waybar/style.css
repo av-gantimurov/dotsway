@@ -1,0 +1,49 @@
+@import "/usr/share/sway/templates/waybar/style.css";
+
+#custom-ipcheck {
+    /*border-radius: 10% / 50%;*/
+    /*border-radius: 5px;*/
+
+    font-weight: bold;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: @theme_bg_color;
+    /*background-color: @theme_selected_bg_color;*/
+    background-color: @warning_color;
+}
+
+/*#custom-ipcheck.RU {
+    color: @warning_color;
+}*/
+
+
+#custom-ipcheck.AS12722,
+#custom-ipcheck.AS8342 {
+    color: @warning_color;
+    background-color: @theme_bg_color;
+}
+
+#custom-ipcheck.error {
+    /*# background-color: @error_color;*/
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-name: blink-critical;
+    animation-duration: 2s;
+    color: @error_color;
+    background-color: @theme_bg_color;
+}
+
+#custom-smartctl.error {
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-name: blink-critical;
+    animation-duration: 2s;
+    color: @error_color;
+    background-color: @theme_bg_color;
+}
+
+#custom-pomodoro.paused {
+  border-bottom: 3px solid @yellow;
+}
